@@ -1,13 +1,39 @@
-# Collection of Docker Compose YAML File
+# 🐳 Docker Compose Collection
+A simple collection of Docker Compose YAML files to quickly spin up commonly used services. 🚀
 
-To use it:
+## ✨ About the Project
+This project serves as a reference for setting up different development environments using Docker Compose. Currently, it includes:
 
- - Create a new file called "docker-compose.yml"
- - Paste the code from one of the file that you are interested
- - Modify any enviorment variable, ports and volumes that you need
+* 📦 MongoDB + Express Website 🟢
 
-To upload the container run:
+* 🐘 PostgreSQL + pgAdmin 🟢
+
+More configurations will be added in the future! ⚡
+
+## 🚀 Getting Started
+
+### 🔼 Stand Up the Containers
 
 ```
-docker compose up -d
+docker-compose -f <docker-compose-file.yml> up -d
 ```
+
+Example:
+
+```
+docker-compose -f docker-compose-mongo-express.yml up -d
+```
+
+### 🔽 Shut Down the Containers
+
+```
+docker-compose -f <docker-compose-file.yml> down
+```
+
+Example:
+```
+docker-compose -f docker-compose-mongo-express.yml down
+```
+
+Feel free to explore, use, and contribute! 😊
+
